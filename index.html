@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Hitex Cleaning Services: residential, office, deep and post-construction cleaning and facility management in Umuahia, Aba, Owerri, Port Harcourt and Uyo.">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Hitex Cleaning Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Kalam:wght@400;700&display=swap">
+<style>
+/* Layout: van-livery brand page. Huge expanded wordmark on deep purple, the quote builder is a paper job card filled in by pen and stamped in violet ink. Single committed look. */
+:root {
+  --purple: #33105F;
+  --purple-2: #4A1D86;
+  --lilac: #C9A6E4;
+  --lilac-pale: #EDE1F7;
+  --black: #000000;
+  --white: #FFFFFF;
+  --paper: #FFFFFF;
+  --rule: #D9CCE6;
+  --ink: #000000;
+  --stamp: #5A22A8;
+  --muted: #5B5266;
+  --wa: #1E8E4C;
+
+  --f-sans: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --f-pen: "Kalam", "Comic Sans MS", cursive;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { background: var(--white); color: var(--black); font-family: var(--f-sans); font-size: 17px; line-height: 1.55; font-variation-settings: "wdth" 100; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--black); }
+h1, h2, h3 { margin: 0; line-height: 1; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--lilac); outline-offset: 3px; }
+
+.wrap { max-width: 1240px; margin-inline: auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.wide { font-variation-settings: "wdth" 125; }
+
+/* Buttons: chunky, square, livery-like */
+.btn {
+  -webkit-appearance: none; appearance: none; border: 0; cursor: pointer; text-decoration: none;
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font: 800 16px/1 var(--f-sans); font-variation-settings: "wdth" 112; letter-spacing: .01em;
+  padding: 17px 24px; min-height: 54px; border-radius: 3px;
+  transition: transform 150ms var(--ease-out), background-color 180ms var(--ease-out), color 180ms var(--ease-out);
+}
+.btn:active { transform: scale(0.97); }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn-lilac { background: var(--lilac); color: var(--black); }
+.btn-black { background: var(--black); color: var(--white); }
+.btn-line { background: transparent; color: var(--lilac); box-shadow: inset 0 0 0 2px var(--lilac); }
+.btn-wa { background: var(--wa); color: var(--white); }
+@media (hover: hover) and (pointer: fine) {
+  .btn-lilac:hover { background: var(--white); }
+  .btn-black:hover { background: var(--purple-2); }
+  .btn-line:hover { background: var(--lilac); color: var(--black); }
+  .btn-wa:hover { background: #176F3B; }
+}
+
+/* Top strip */
+.strip { background: var(--black); color: var(--lilac-pale); font-size: 14px; }
+.strip .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px 24px; flex-wrap: wrap; padding-block: 10px; }
+.strip-nums { display: flex; gap: 20px; flex-wrap: wrap; }
+.strip-nums b { color: var(--white); font-weight: 700; font-variant-numeric: tabular-nums; user-select: all; }
+.strip a { color: var(--lilac); text-decoration: none; font-weight: 700; }
+@media (max-width: 560px) { .strip-hours { display: none; } }
+
+/* Hero */
+.hero { background: var(--purple); color: var(--white); overflow: hidden; }
+.hero .wrap { padding-block: 22px clamp(56px, 8vw, 96px); }
+.nav { display: flex; justify-content: flex-end; align-items: center; gap: 16px; }
+.nav-links { display: flex; gap: 26px; font-size: 15px; font-weight: 600; }
+.nav-links a { text-decoration: none; color: var(--lilac-pale); }
+@media (hover: hover) { .nav-links a:hover { color: var(--lilac); } }
+.nav-mark { font-weight: 900; font-size: 15px; letter-spacing: .02em; color: var(--lilac); text-decoration: none; }
+@media (max-width: 760px) { .nav-links { display: none; } }
+
+.wordmark {
+  font-weight: 900; font-variation-settings: "wdth" 125; color: var(--lilac);
+  font-size: clamp(96px, 25vw, 300px); letter-spacing: -0.045em; line-height: .8;
+  margin: clamp(28px, 4vw, 48px) 0 0 -0.05em;
+}
+.wordmark-sub { display: flex; justify-content: space-between; align-items: baseline; gap: 12px 24px; flex-wrap: wrap; border-top: 4px solid var(--lilac); margin-top: clamp(14px, 2vw, 22px); padding-top: 14px; }
+.wordmark-sub span { font-weight: 800; font-variation-settings: "wdth" 125; font-size: clamp(15px, 1.6vw, 20px); letter-spacing: .02em; color: var(--lilac); }
+.wordmark-sub em { font-style: normal; color: var(--lilac-pale); font-size: 15px; }
+
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: clamp(36px, 6vw, 88px); margin-top: clamp(40px, 6vw, 72px); align-items: start; }
+.hero-copy { display: grid; gap: 26px; min-width: 0; }
+.hero h1 { font-weight: 800; font-variation-settings: "wdth" 100; font-size: clamp(34px, 4.2vw, 54px); letter-spacing: -0.03em; line-height: 1.04; max-width: 15ch; }
+.hero-lede { color: var(--lilac-pale); font-size: 19px; max-width: 42ch; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.kit { border-top: 2px solid rgba(201,166,228,.35); padding-top: 22px; display: grid; gap: 10px; }
+.kit h2 { font-size: 15px; font-weight: 800; color: var(--lilac); font-variation-settings: "wdth" 112; }
+.kit p { color: var(--lilac-pale); font-size: 16px; max-width: 46ch; }
+@media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; } }
+
+/* ===== Job card ===== */
+.card {
+  position: relative; background: var(--paper); color: var(--ink);
+  border-radius: 2px; transform: rotate(-1.2deg);
+  box-shadow: 0 2px 0 rgba(0,0,0,.08), 0 30px 60px -20px rgba(0,0,0,.55), 0 0 0 1px rgba(0,0,0,.04);
+  min-width: 0;
+}
+.card::before { /* perforated stub edge */
+  content: ""; position: absolute; left: 0; right: 0; top: -6px; height: 12px;
+  background: radial-gradient(circle at 8px 6px, var(--purple) 3.2px, transparent 3.6px) 0 0 / 16px 12px repeat-x;
+}
+@media (max-width: 980px) { .card { transform: none; } }
+.card-head { padding: 24px 24px 16px; border-bottom: 3px solid var(--black); display: grid; gap: 4px; }
+.card-head-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.card-biz { font-weight: 900; font-variation-settings: "wdth" 125; font-size: 22px; letter-spacing: -0.02em; line-height: 1; }
+.card-no { font-family: var(--f-pen); color: var(--stamp); font-size: 20px; font-weight: 700; white-space: nowrap; }
+.card-no small { font-family: var(--f-sans); font-size: 12px; font-weight: 600; color: var(--muted); }
+.card-services { font-size: 12.5px; color: var(--muted); line-height: 1.4; font-variation-settings: "wdth" 88; }
+.card-body { padding: 6px 24px 24px; }
+.row { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 4px 14px; padding-block: 14px; border-bottom: 1px dashed var(--rule); align-items: baseline; }
+.row > .k { font-size: 14px; font-weight: 700; font-variation-settings: "wdth" 88; color: var(--muted); padding-top: 4px; }
+.row > .v { min-width: 0; }
+@media (max-width: 480px) { .row { grid-template-columns: 1fr; } }
+
+/* Ink-circled choices */
+.opts { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.opt { position: relative; cursor: pointer; }
+.opt input { position: absolute; opacity: 0; pointer-events: none; }
+.opt > span { position: relative; display: inline-block; font-family: var(--f-pen); font-size: 20px; line-height: 1.3; padding: 4px 6px; color: #3C3646; transition: color 160ms var(--ease-out); }
+.opt input:checked + span { color: var(--ink); font-weight: 700; }
+.opt input:focus-visible + span { outline: 2px solid var(--stamp); outline-offset: 2px; border-radius: 4px; }
+.opt svg.circ { position: absolute; left: -10px; top: -5px; width: calc(100% + 20px); height: calc(100% + 10px); pointer-events: none; overflow: visible; }
+.opt svg.circ path { fill: none; stroke: var(--stamp); stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0; transition: stroke-dashoffset 120ms ease-in, opacity 0ms 120ms; }
+.opt input:checked + span svg.circ path { stroke-dashoffset: 0; opacity: 1; transition: stroke-dashoffset 340ms var(--ease-out), opacity 0ms; }
+.opt small { font-family: var(--f-sans); font-size: 12px; font-weight: 700; color: var(--stamp); margin-left: 4px; }
+
+/* Tick boxes */
+.ticks { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.tick { position: relative; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-family: var(--f-pen); font-size: 19px; color: #3C3646; padding-block: 2px; }
+.tick input { position: absolute; opacity: 0; pointer-events: none; }
+.tick .box { width: 20px; height: 20px; border: 2px solid var(--black); position: relative; flex: none; }
+.tick .box svg { position: absolute; left: -2px; top: -9px; width: 28px; height: 28px; overflow: visible; }
+.tick .box path { fill: none; stroke: var(--stamp); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0; transition: stroke-dashoffset 100ms ease-in, opacity 0ms 100ms; }
+.tick input:checked ~ .box path { stroke-dashoffset: 0; opacity: 1; transition: stroke-dashoffset 260ms var(--ease-out), opacity 0ms; }
+.tick input:checked ~ .lbl { color: var(--ink); }
+.tick input:focus-visible ~ .box { outline: 2px solid var(--stamp); outline-offset: 2px; }
+.tick .lbl small { font-family: var(--f-sans); font-size: 12px; color: var(--muted); margin-left: 4px; }
+
+/* Counters */
+.counters { display: flex; flex-wrap: wrap; gap: 10px 28px; }
+.counter { display: flex; align-items: center; gap: 10px; }
+.counter .n { font-family: var(--f-pen); font-weight: 700; font-size: 26px; min-width: 22px; text-align: center; line-height: 1; }
+.counter .what { font-family: var(--f-pen); font-size: 19px; color: #3C3646; }
+.cbtn { -webkit-appearance: none; appearance: none; width: 32px; height: 32px; border: 2px solid var(--black); background: var(--white); color: var(--black); cursor: pointer; font: 800 18px/1 var(--f-sans); display: grid; place-items: center; border-radius: 2px; transition: transform 130ms var(--ease-out), background-color 150ms var(--ease-out); }
+.cbtn:active { transform: scale(0.9); }
+.cbtn:disabled { opacity: .3; cursor: default; transform: none; }
+@media (hover: hover) { .cbtn:not(:disabled):hover { background: var(--lilac-pale); } }
+
+/* Pen fields */
+.pen { width: 100%; border: 0; border-bottom: 2px solid var(--black); background: transparent; border-radius: 0; font: 400 20px/1.3 var(--f-pen); color: var(--ink); padding: 4px 2px 3px; min-height: 40px; }
+.pen::placeholder { color: #A79DB2; }
+.pen:focus { outline: none; border-bottom-color: var(--stamp); background: var(--lilac-pale); }
+select.pen { -webkit-appearance: none; appearance: none; cursor: pointer; padding-right: 26px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 2px center; background-size: 18px; }
+input[type="range"] { width: 100%; accent-color: var(--stamp); }
+.area-out { font-family: var(--f-pen); font-weight: 700; font-size: 22px; }
+.fm-note { font-family: var(--f-pen); font-size: 18px; line-height: 1.4; color: #3C3646; }
+
+.amount { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; padding: 18px 0 6px; flex-wrap: wrap; }
+.amount .k { font-weight: 900; font-variation-settings: "wdth" 125; font-size: 15px; }
+.amount .k small { display: block; font-weight: 500; font-variation-settings: "wdth" 88; font-size: 13px; color: var(--muted); margin-top: 4px; }
+.amount .total { font-family: var(--f-pen); font-weight: 700; font-size: clamp(38px, 5vw, 48px); line-height: 1; position: relative; font-variant-numeric: tabular-nums; }
+.amount .total::after { content: ""; position: absolute; left: -4px; right: -4px; bottom: -8px; height: 7px; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: rotate(-1deg); }
+.saving { font-family: var(--f-pen); color: var(--stamp); font-size: 17px; }
+
+.cust { margin-top: 18px; border-top: 3px solid var(--black); padding-top: 4px; }
+.cust-title { font-weight: 900; font-variation-settings: "wdth" 125; font-size: 15px; padding-top: 14px; }
+.card-actions { display: grid; gap: 10px; margin-top: 20px; }
+.card-actions .btn { width: 100%; }
+.err { font-size: 15px; color: #B3123E; font-weight: 600; }
+.small { font-size: 13px; color: var(--muted); line-height: 1.45; }
+
+/* Stamp */
+.stamp {
+  position: absolute; right: 22px; top: 38%; z-index: 3; pointer-events: none;
+  color: var(--stamp); border: 4px double var(--stamp); border-radius: 6px; padding: 8px 16px 6px; text-align: center;
+  font-weight: 900; font-variation-settings: "wdth" 125; line-height: 1; background: rgba(255,255,255,.12);
+  transform: rotate(-11deg); opacity: .9; filter: url(#ink); mix-blend-mode: multiply;
+}
+.stamp b { display: block; font-size: 38px; letter-spacing: .04em; }
+.stamp span { display: block; font-size: 11px; letter-spacing: .08em; margin-top: 4px; font-variation-settings: "wdth" 100; }
+.stamp.hit { animation: stamp 260ms var(--ease-out) both; }
+@keyframes stamp { from { transform: rotate(-11deg) scale(1.35); opacity: 0; } 60% { opacity: .95; } to { transform: rotate(-11deg) scale(1); opacity: .9; } }
+
+/* ===== Sections ===== */
+.season { background: var(--lilac); color: var(--black); }
+.season .wrap { padding-block: clamp(48px, 7vw, 84px); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 28px 64px; align-items: end; }
+.season h2 { font-weight: 900; font-variation-settings: "wdth" 118; font-size: clamp(36px, 5.4vw, 72px); letter-spacing: -0.035em; line-height: .95; }
+.season p { font-size: 19px; max-width: 44ch; }
+.season .btn { margin-top: 22px; }
+@media (max-width: 860px) { .season .wrap { grid-template-columns: 1fr; } }
+
+.sec { padding-block: clamp(64px, 9vw, 112px); }
+.sec-title { font-weight: 900; font-variation-settings: "wdth" 125; font-size: clamp(30px, 4.6vw, 58px); letter-spacing: -0.035em; margin-bottom: clamp(28px, 4vw, 44px); }
+
+.svc { border-top: 4px solid var(--black); }
+.svc-row { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr) minmax(150px, auto); gap: 14px 40px; padding-block: 28px; border-bottom: 2px solid var(--black); align-items: start; }
+.svc-row h3 { font-weight: 800; font-variation-settings: "wdth" 112; font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.025em; }
+.svc-row h3 + p { margin-top: 10px; color: var(--muted); max-width: 38ch; }
+.svc-row ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 16px; }
+.svc-row li { padding-left: 22px; position: relative; }
+.svc-row li::before { content: ""; position: absolute; left: 0; top: .62em; width: 12px; height: 3px; background: var(--purple-2); }
+.svc-price { text-align: right; display: grid; gap: 8px; justify-items: end; }
+.svc-price .from { font-size: 14px; color: var(--muted); }
+.svc-price b { font-weight: 900; font-variation-settings: "wdth" 112; font-size: 26px; font-variant-numeric: tabular-nums; line-height: 1; }
+.linkbtn { -webkit-appearance: none; appearance: none; background: none; border: 0; padding: 6px 0; cursor: pointer; font: 700 15px/1.2 var(--f-sans); color: var(--purple-2); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+@media (max-width: 860px) {
+  .svc-row { grid-template-columns: 1fr; }
+  .svc-price { text-align: left; justify-items: start; grid-auto-flow: column; align-items: baseline; justify-content: start; gap: 16px; }
+}
+
+.how { background: var(--black); color: var(--white); }
+.how .sec-title { color: var(--lilac); }
+.how-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px clamp(24px, 4vw, 56px); }
+.how-step { display: grid; gap: 12px; align-content: start; border-top: 2px solid var(--purple-2); padding-top: 18px; min-width: 0; }
+.how-step .num { font-weight: 900; font-variation-settings: "wdth" 125; font-size: 64px; line-height: .8; color: var(--purple-2); }
+.how-step h3 { font-weight: 800; font-size: 24px; letter-spacing: -0.02em; font-variation-settings: "wdth" 108; }
+.how-step p { color: #CFC5DA; max-width: 34ch; }
+@media (max-width: 760px) { .how-grid { grid-template-columns: 1fr; } }
+
+.faq-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap: 28px clamp(32px, 5vw, 80px); }
+.faq { border-top: 4px solid var(--black); }
+.faq details { border-bottom: 2px solid var(--black); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 20px; font-weight: 800; font-size: 20px; letter-spacing: -0.015em; font-variation-settings: "wdth" 104; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq .pm { width: 18px; height: 18px; position: relative; flex: none; transition: transform 220ms var(--ease-out); }
+.faq .pm::before, .faq .pm::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 3px; margin-top: -1.5px; background: var(--black); }
+.faq .pm::after { transform: rotate(90deg); }
+.faq details[open] .pm { transform: rotate(45deg); }
+.faq details p { padding-bottom: 22px; color: var(--muted); max-width: 62ch; }
+@media (max-width: 860px) { .faq-grid { grid-template-columns: 1fr; } }
+
+/* Van panel */
+.van { background: var(--purple); color: var(--white); position: relative; overflow: hidden; }
+.van-stripe { position: relative; height: 70px; margin-block: -10px; }
+.van-stripe::before, .van-stripe::after { content: ""; position: absolute; left: -50vw; right: -50vw; transform: rotate(-2.5deg); }
+.van-stripe::before { top: 6px; height: 40px; background: var(--lilac); }
+.van-stripe::after { top: 54px; height: 10px; background: var(--black); }
+.van .wrap { position: relative; z-index: 1; padding-block: clamp(64px, 9vw, 112px); display: grid; gap: clamp(40px, 7vw, 120px); }
+.van-name { font-weight: 900; font-variation-settings: "wdth" 125; font-size: clamp(40px, 7.5vw, 104px); letter-spacing: -0.04em; line-height: .88; color: var(--lilac); }
+.van-name span { display: block; color: var(--white); font-size: .36em; letter-spacing: -0.01em; margin-top: 10px; font-weight: 800; }
+.van-bottom { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px 64px; align-items: end; }
+.van-nums { display: grid; gap: 14px; }
+.van-num { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.van-num b { font-weight: 900; font-variation-settings: "wdth" 118; font-size: clamp(28px, 4vw, 48px); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; user-select: all; line-height: 1; }
+.copy { -webkit-appearance: none; appearance: none; border: 2px solid var(--lilac); background: transparent; color: var(--lilac); font: 700 13px/1 var(--f-sans); padding: 8px 12px; border-radius: 2px; cursor: pointer; min-height: 34px; transition: transform 130ms var(--ease-out), background-color 150ms var(--ease-out), color 150ms var(--ease-out); }
+.copy:active { transform: scale(0.95); }
+.copy.done { background: var(--lilac); color: var(--black); }
+.van-cities { font-weight: 800; font-variation-settings: "wdth" 112; font-size: clamp(18px, 2vw, 24px); line-height: 1.35; color: var(--white); }
+.van-cities small { display: block; font-weight: 500; font-size: 15px; color: var(--lilac-pale); margin-top: 10px; font-variation-settings: "wdth" 100; }
+.van .hero-cta { margin-top: 26px; }
+@media (max-width: 860px) {
+  .van-bottom { grid-template-columns: 1fr; }
+}
+
+footer.site { background: var(--black); color: #9B90A8; font-size: 14px; }
+footer.site .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px 24px; padding-block: 24px; }
+
+.fab { position: fixed; z-index: 40; right: calc(18px + env(safe-area-inset-right, 0px)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); width: 58px; height: 58px; border-radius: 50%; background: var(--wa); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 28px -8px rgba(0,0,0,.5); transition: transform 150ms var(--ease-out); }
+.fab:active { transform: scale(0.93); }
+.fab svg { width: 28px; height: 28px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 1ms !important; animation-duration: 1ms !important; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.5"/><feComposite in="SourceGraphic" operator="in"/></filter>
+</svg>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="strip-nums">
+      <span>Call <b>0810 760 9775</b></span>
+      <span>or <b>0903 664 1528</b></span>
+    </div>
+    <span class="strip-hours">Mon to Sat, 7 am to 7 pm</span>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="nav">
+      <nav class="nav-links" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">Questions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="wordmark" aria-hidden="true">HITEX</div>
+    <div class="wordmark-sub">
+      <span>Cleaning Services</span>
+      <em>Umuahia, Aba, Owerri, Port Harcourt, Uyo</em>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Homes, offices and new buildings, cleaned properly.</h1>
+        <p class="hero-lede">Fill the job card to see your price. Hitex calls to confirm, the crew arrives with everything, and you check the work with the supervisor before they leave.</p>
+        <div class="hero-cta">
+          <a class="btn btn-lilac" href="#card">Fill the job card</a>
+          <a class="btn btn-line" href="https://wa.me/2348107609775?text=Hello%20Hitex%2C%20I%27d%20like%20to%20book%20a%20cleaning." target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+        <div class="kit">
+          <h2>What the crew brings</h2>
+          <p>Hypo, Harpic, Morning Fresh, disinfectant, microfibre cloths, squeegees, mops and buckets, a vacuum and a ladder. You don't need to buy anything.</p>
+        </div>
+      </div>
+
+      <form class="card" id="card" novalidate aria-label="Hitex job card">
+        <div class="stamp" id="stamp" hidden><b>BOOKED</b><span id="stamp-date">HITEX</span></div>
+        <div class="card-head">
+          <div class="card-head-top">
+            <div class="card-biz">HITEX CLEANING SERVICES</div>
+            <div class="card-no"><small>No.</small> <span id="job-no">0417</span></div>
+          </div>
+          <div class="card-services">Residential, office, deep and post-construction cleaning. Facility management. 0810 760 9775, 0903 664 1528</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="k">Job</div>
+            <div class="v opts" data-group="svc">
+              <label class="opt"><input type="radio" name="svc" id="svc-res" value="res" checked><span>Home clean</span></label>
+              <label class="opt"><input type="radio" name="svc" id="svc-deep" value="deep"><span>Deep clean</span></label>
+              <label class="opt"><input type="radio" name="svc" id="svc-office" value="office"><span>Office</span></label>
+              <label class="opt"><input type="radio" name="svc" id="svc-post" value="post"><span>New building</span></label>
+              <label class="opt"><input type="radio" name="svc" id="svc-fm" value="fm"><span>Facility contract</span></label>
+            </div>
+          </div>
+
+          <div class="row" data-for="res deep">
+            <div class="k">Rooms</div>
+            <div class="v counters">
+              <div class="counter">
+                <button type="button" class="cbtn" data-step="bed" data-d="-1" aria-label="Fewer bedrooms">−</button>
+                <span class="n" id="bed-v">2</span>
+                <button type="button" class="cbtn" data-step="bed" data-d="1" aria-label="More bedrooms">+</button>
+                <span class="what" id="bed-w">bedrooms</span>
+              </div>
+              <div class="counter">
+                <button type="button" class="cbtn" data-step="bath" data-d="-1" aria-label="Fewer bathrooms">−</button>
+                <span class="n" id="bath-v">2</span>
+                <button type="button" class="cbtn" data-step="bath" data-d="1" aria-label="More bathrooms">+</button>
+                <span class="what" id="bath-w">bathrooms</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" data-for="office" hidden>
+            <label class="k" for="office-size">Floor size</label>
+            <div class="v">
+              <select class="pen" id="office-size">
+                <option value="45000">Up to 100 m², small office</option>
+                <option value="85000" selected>100 to 250 m²</option>
+                <option value="150000">250 to 500 m²</option>
+                <option value="260000">500 to 1,000 m²</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row" data-for="post" hidden>
+            <label class="k" for="area">Floor area</label>
+            <div class="v" style="display:grid;gap:6px">
+              <span class="area-out" id="area-v">200 m²</span>
+              <input type="range" id="area" min="50" max="1000" step="25" value="200">
+            </div>
+          </div>
+
+          <div class="row" data-for="fm" hidden>
+            <div class="k">Contract</div>
+            <p class="v fm-note">Daily cleaners, supplies, waste and fumigation schedule, and a supervisor, for estates, plazas, schools and banks. Priced after a free site visit.</p>
+          </div>
+
+          <div class="row" data-for="res office">
+            <div class="k">How often</div>
+            <div class="v opts" data-group="freq">
+              <label class="opt"><input type="radio" name="freq" id="f-once" value="0" checked><span>Once</span></label>
+              <label class="opt"><input type="radio" name="freq" id="f-month" value="0.05"><span>Monthly<small>−5%</small></span></label>
+              <label class="opt"><input type="radio" name="freq" id="f-bi" value="0.10"><span>2 weeks<small>−10%</small></span></label>
+              <label class="opt"><input type="radio" name="freq" id="f-week" value="0.15"><span>Weekly<small>−15%</small></span></label>
+            </div>
+          </div>
+
+          <div class="row" data-for="res deep">
+            <div class="k">Add</div>
+            <div class="v ticks">
+              <label class="tick"><input type="checkbox" name="ex" id="ex-fridge" value="5000" data-name="Inside fridge"><span class="box"></span><span class="lbl">Inside fridge</span></label>
+              <label class="tick"><input type="checkbox" name="ex" id="ex-oven" value="6000" data-name="Oven"><span class="box"></span><span class="lbl">Oven</span></label>
+              <label class="tick"><input type="checkbox" name="ex" id="ex-win" value="8000" data-name="Windows and nets"><span class="box"></span><span class="lbl">Windows and nets</span></label>
+              <label class="tick"><input type="checkbox" name="ex" id="ex-sofa" value="10000" data-name="Sofa shampoo"><span class="box"></span><span class="lbl">Sofa shampoo</span></label>
+              <label class="tick"><input type="checkbox" name="ex" id="ex-laundry" value="7000" data-name="Laundry and ironing"><span class="box"></span><span class="lbl">Laundry and ironing</span></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="k">City</div>
+            <div class="v opts" data-group="city">
+              <label class="opt"><input type="radio" name="city" id="c-umu" value="Umuahia"><span>Umuahia</span></label>
+              <label class="opt"><input type="radio" name="city" id="c-aba" value="Aba"><span>Aba</span></label>
+              <label class="opt"><input type="radio" name="city" id="c-owe" value="Owerri"><span>Owerri</span></label>
+              <label class="opt"><input type="radio" name="city" id="c-ph" value="Port Harcourt" checked><span>PH</span></label>
+              <label class="opt"><input type="radio" name="city" id="c-uyo" value="Uyo"><span>Uyo</span></label>
+            </div>
+          </div>
+
+          <div class="amount" aria-live="polite">
+            <div class="k">AMOUNT<small id="amount-note">Per visit, supplies included</small></div>
+            <div style="text-align:right">
+              <div class="total" id="total">₦0</div>
+            </div>
+          </div>
+          <div class="saving" id="saving" hidden></div>
+
+          <div class="cust">
+            <div class="cust-title">CUSTOMER</div>
+            <div class="row"><label class="k" for="b-name">Name</label><div class="v"><input class="pen" id="b-name" type="text" autocomplete="name" placeholder="Ada Okafor"></div></div>
+            <div class="row"><label class="k" for="b-phone">Phone</label><div class="v"><input class="pen" id="b-phone" type="tel" autocomplete="tel" placeholder="0803 000 0000"></div></div>
+            <div class="row"><label class="k" for="b-addr">Address</label><div class="v"><input class="pen" id="b-addr" type="text" autocomplete="street-address" placeholder="House no., street, nearest landmark"></div></div>
+            <div class="row"><label class="k" for="b-day">Day</label><div class="v"><select class="pen" id="b-day"></select></div></div>
+            <div class="row"><label class="k" for="b-time">Time</label><div class="v">
+              <select class="pen" id="b-time"><option>8:00 am</option><option>10:00 am</option><option>12:00 noon</option><option>2:00 pm</option></select>
+            </div></div>
+          </div>
+
+          <div class="card-actions">
+            <p class="err" id="err" hidden></p>
+            <button type="submit" class="btn btn-black" id="book">Book this job</button>
+            <a class="btn btn-wa" id="wa-send" href="#" target="_blank" rel="noopener" hidden>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+              Send job card on WhatsApp
+            </a>
+            <p class="small" id="card-foot">Demo prices. Hitex confirms the final amount on a short call before the visit.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="season">
+    <div class="wrap">
+      <h2>Harmattan dust is on the way.</h2>
+      <div>
+        <p>From November, fine dust settles on louvres, fans, curtains and every shelf. Book a deep clean after the first dry spell, or a fortnightly visit through the season.</p>
+        <button class="btn btn-black" type="button" data-pick="deep">Price a deep clean</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services">
+    <div class="wrap">
+      <h2 class="sec-title">Services</h2>
+      <div class="svc">
+        <div class="svc-row">
+          <div><h3>Residential cleaning</h3><p>Regular cleaning for flats, duplexes and family houses.</p></div>
+          <ul><li>Dusting of surfaces, louvres, fans and switches</li><li>Kitchen counters, sink and cooker top</li><li>Toilets, showers and wall tiles scrubbed</li><li>Floors swept, mopped and vacuumed</li></ul>
+          <div class="svc-price"><span class="from">from</span><b>₦30,000</b><button class="linkbtn" type="button" data-pick="res">Price my home</button></div>
+        </div>
+        <div class="svc-row">
+          <div><h3>Office cleaning</h3><p>Before opening or after close, so work carries on.</p></div>
+          <ul><li>Desks, screens and phones wiped</li><li>Restrooms and kitchenette</li><li>Reception, stairs and meeting rooms</li><li>Bins emptied and waste bagged</li></ul>
+          <div class="svc-price"><span class="from">from</span><b>₦45,000</b><button class="linkbtn" type="button" data-pick="office">Price my office</button></div>
+        </div>
+        <div class="svc-row">
+          <div><h3>Deep cleaning</h3><p>A full reset for moving in, moving out, or after Harmattan and the holidays.</p></div>
+          <ul><li>Inside cupboards, wardrobes and drawers</li><li>Grout, limescale and kitchen grease</li><li>Doors, skirting, burglary proofs and fans</li><li>Mattress and rug vacuuming</li></ul>
+          <div class="svc-price"><span class="from">from</span><b>₦51,000</b><button class="linkbtn" type="button" data-pick="deep">Price a deep clean</button></div>
+        </div>
+        <div class="svc-row">
+          <div><h3>Post-construction cleaning</h3><p>For new and renovated buildings, so they're ready to hand over or move into.</p></div>
+          <ul><li>Debris, cement and sand removed</li><li>Paint and POP splashes off tiles and glass</li><li>Window frames and tracks cleared</li><li>Final polish for inspection</li></ul>
+          <div class="svc-price"><span class="from">from</span><b>₦120,000</b><button class="linkbtn" type="button" data-pick="post">Price a building</button></div>
+        </div>
+        <div class="svc-row">
+          <div><h3>Facility management</h3><p>A dedicated Hitex team on a monthly contract for estates, plazas, schools and banks.</p></div>
+          <ul><li>Daily janitorial crews</li><li>Waste and fumigation schedule</li><li>On-site supervisor</li><li>Monthly report to management</li></ul>
+          <div class="svc-price"><span class="from">priced after</span><b>Site visit</b><button class="linkbtn" type="button" data-pick="fm">Request a visit</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec how" id="how">
+    <div class="wrap">
+      <h2 class="sec-title">How it works</h2>
+      <div class="how-grid">
+        <div class="how-step"><span class="num">1</span><h3>Fill the job card</h3><p>Choose the job and see the amount. Send it to Hitex on WhatsApp, or call either line.</p></div>
+        <div class="how-step"><span class="num">2</span><h3>Hitex confirms</h3><p>You get a call to confirm the price and time, and the crew lead's name and number the evening before.</p></div>
+        <div class="how-step"><span class="num">3</span><h3>Check, then pay</h3><p>Walk through the space with the supervisor. Anything missed is fixed there and then. Pay by transfer or card.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap faq-grid">
+      <h2 class="sec-title">Questions</h2>
+      <div class="faq">
+        <details><summary>Do I need to buy cleaning products?<span class="pm" aria-hidden="true"></span></summary><p>No. The crew brings everything. If you'd like a particular product used, leave it out and tell the crew lead.</p></details>
+        <details><summary>Do I need to be at home?<span class="pm" aria-hidden="true"></span></summary><p>Someone needs to let the crew in and be there at the end for the walk-through. You don't need to stay for the whole clean.</p></details>
+        <details><summary>How long does it take?<span class="pm" aria-hidden="true"></span></summary><p>A regular clean of a 3-bedroom flat takes 3 to 4 hours with two cleaners. Deep cleans and new buildings can take a full day. You get an estimate when Hitex confirms.</p></details>
+        <details><summary>What if there's no light?<span class="pm" aria-hidden="true"></span></summary><p>Most of the work is done by hand. For vacuuming and scrubbing machines the crew needs power, from the grid or your generator or inverter. Let Hitex know when you book.</p></details>
+        <details><summary>Can I change the date?<span class="pm" aria-hidden="true"></span></summary><p>Yes, free of charge up to 24 hours before the visit. Call or message either Hitex line.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="van" id="contact">
+    <div class="wrap">
+      <div class="van-name">HITEX<span>Cleaning Services</span></div>
+      <div class="van-stripe" aria-hidden="true"></div>
+      <div class="van-bottom">
+        <div class="van-nums">
+          <div class="van-num"><b>0810 760 9775</b><button class="copy" type="button" data-copy="+2348107609775">Copy</button></div>
+          <div class="van-num"><b>0903 664 1528</b><button class="copy" type="button" data-copy="+2349036641528">Copy</button></div>
+          <div class="hero-cta">
+            <a class="btn btn-wa" href="https://wa.me/2348107609775?text=Hello%20Hitex%2C%20I%27d%20like%20a%20cleaning%20quote." target="_blank" rel="noopener">Message on WhatsApp</a>
+          </div>
+        </div>
+        <div class="van-cities">Umuahia. Aba. Owerri. Port Harcourt. Uyo.<small>Monday to Saturday, 7 am to 7 pm. Sundays by appointment. Outside these cities? Message us and we'll tell you if a crew can reach you.</small></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap"><span>© 2026 Hitex Cleaning Services</span><span>Residential, office, deep and post-construction cleaning. Facility management.</span></div>
+</footer>
+
+<a class="fab" href="https://wa.me/2348107609775?text=Hello%20Hitex%2C%20I%27d%20like%20to%20book%20a%20cleaning." target="_blank" rel="noopener" aria-label="Chat with Hitex on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const naira = n => '₦' + Math.round(n).toLocaleString('en-NG');
+  const names = { res: 'Home clean', deep: 'Deep clean', office: 'Office cleaning', post: 'Post-construction (new building)', fm: 'Facility management contract' };
+  const state = { bed: 2, bath: 2 };
+  const limits = { bed: [1, 8], bath: [1, 8] };
+
+  // Hand-drawn ink circles and ticks, each slightly different
+  const wobble = (seed) => {
+    const r = (n) => (Math.sin(seed * 9.13 + n * 3.7) * 0.5 + 0.5);
+    const a = 2 + r(1) * 3, b = 2 + r(2) * 3;
+    return `M ${8 + r(3) * 6} ${a + 4} C ${30 + r(4) * 10} ${-1}, ${78 + r(5) * 8} ${b - 1}, ${96} ${18 + r(6) * 6} S ${70} ${41}, ${40} ${38} S ${-2} ${24 + r(7) * 4}, ${12 + r(8) * 6} ${4 + r(9) * 3}`;
+  };
+  $$('.opt > span').forEach((span, i) => {
+    span.insertAdjacentHTML('beforeend', `<svg class="circ" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="${wobble(i + 1)}"/></svg>`);
+  });
+  $$('.tick .box').forEach(b => {
+    b.innerHTML = '<svg viewBox="0 0 28 28" aria-hidden="true"><path pathLength="1" d="M5 15 L11 21 L25 3"/></svg>';
+  });
+
+  const val = n => ($(`input[name="${n}"]:checked`) || {}).value;
+
+  function compute() {
+    const s = val('svc');
+    if (s === 'fm') return { custom: true };
+    let base = 0, extras = 0, disc = 0, note = 'Per visit, supplies included';
+    if (s === 'res' || s === 'deep') {
+      base = Math.max(30000, 12000 + state.bed * 6000 + state.bath * 4000);
+      if (s === 'deep') { base = Math.round(base * 1.7 / 500) * 500; note = 'One visit, supplies included'; }
+      extras = $$('input[name="ex"]:checked').reduce((a, el) => a + +el.value, 0);
+    } else if (s === 'office') {
+      base = +$('#office-size').value;
+    } else if (s === 'post') {
+      base = Math.max(120000, +$('#area').value * 650);
+      note = 'Whole building, debris removal included';
+    }
+    if (s === 'res' || s === 'office') disc = +val('freq');
+    return { total: (base + extras) * (1 - disc), saved: (base + extras) * disc, note };
+  }
+
+  let shown = 0, raf = 0;
+  function tweenTo(target) {
+    cancelAnimationFrame(raf);
+    const el = $('#total');
+    if (reduce) { shown = target; el.textContent = naira(target); return; }
+    const from = shown, t0 = performance.now(), dur = 360;
+    const tick = now => {
+      const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      shown = from + (target - from) * e;
+      el.textContent = naira(Math.round(shown / 50) * 50);
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+  }
+
+  function unbook() {
+    $('#stamp').hidden = true; $('#wa-send').hidden = true; $('#book').hidden = false;
+  }
+
+  function render() {
+    const s = val('svc');
+    $$('[data-for]').forEach(el => { el.hidden = !el.dataset.for.split(' ').includes(s); });
+    $('#bed-v').textContent = state.bed; $('#bed-w').textContent = state.bed === 1 ? 'bedroom' : 'bedrooms';
+    $('#bath-v').textContent = state.bath; $('#bath-w').textContent = state.bath === 1 ? 'bathroom' : 'bathrooms';
+    $$('[data-step]').forEach(b => { const k = b.dataset.step; b.disabled = +b.dataset.d < 0 ? state[k] <= limits[k][0] : state[k] >= limits[k][1]; });
+    $('#area-v').textContent = (+$('#area').value).toLocaleString() + ' m²';
+    const q = compute();
+    if (q.custom) {
+      cancelAnimationFrame(raf);
+      $('#total').textContent = 'Site visit';
+      $('#amount-note').textContent = 'Free visit, proposal in 3 working days';
+      $('#saving').hidden = true;
+      $('#book').textContent = 'Request a site visit';
+      return;
+    }
+    $('#amount-note').textContent = q.note;
+    $('#saving').hidden = !q.saved;
+    $('#saving').textContent = q.saved ? `You save ${naira(q.saved)} each visit` : '';
+    $('#book').textContent = 'Book this job';
+    tweenTo(q.total);
+  }
+
+  const card = $('#card');
+  card.addEventListener('change', e => { if (!e.target.closest('.cust')) unbook(); render(); });
+  card.addEventListener('input', e => { if (e.target.id === 'area') render(); });
+  $$('[data-step]').forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.step;
+    state[k] = Math.min(limits[k][1], Math.max(limits[k][0], state[k] + +b.dataset.d));
+    unbook(); render();
+  }));
+  $$('[data-pick]').forEach(b => b.addEventListener('click', () => {
+    $('#svc-' + b.dataset.pick).checked = true; unbook(); render();
+    card.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  }));
+
+  // Days: next 12, skipping Sundays
+  const dn = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], mn = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  for (let i = 1, n = 0; n < 12; i++) {
+    const d = new Date(); d.setDate(d.getDate() + i);
+    if (d.getDay() === 0) continue;
+    const o = document.createElement('option'); o.textContent = `${dn[d.getDay()]} ${d.getDate()} ${mn[d.getMonth()]}`; $('#b-day').appendChild(o); n++;
+  }
+  const t = new Date();
+  $('#job-no').textContent = String(400 + (t.getDate() * 7 + t.getHours()) % 500).padStart(4, '0');
+
+  card.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = $('#b-name').value.trim(), phone = $('#b-phone').value.trim(), addr = $('#b-addr').value.trim();
+    const miss = [!name && 'your name', !phone && 'a phone number', !addr && 'the address'].filter(Boolean);
+    if (miss.length) {
+      $('#err').textContent = 'Write ' + miss.join(', ').replace(/, ([^,]*)$/, ' and $1') + ' on the card so the crew can reach you.';
+      $('#err').hidden = false;
+      (!name ? $('#b-name') : !phone ? $('#b-phone') : $('#b-addr')).focus();
+      return;
+    }
+    $('#err').hidden = true;
+    const s = val('svc'), q = compute();
+    const lines = [`Job: ${names[s]}`];
+    if (s === 'res' || s === 'deep') lines.push(`Rooms: ${state.bed} bed, ${state.bath} bath`);
+    if (s === 'office') lines.push(`Floor size: ${$('#office-size').selectedOptions[0].text}`);
+    if (s === 'post') lines.push(`Floor area: ${$('#area-v').textContent}`);
+    if (s === 'res' || s === 'office') lines.push(`How often: ${$('input[name="freq"]:checked').closest('.opt').querySelector('span').firstChild.textContent}`);
+    const ex = $$('input[name="ex"]:checked').filter(el => !el.closest('[hidden]')).map(el => el.dataset.name);
+    if (ex.length) lines.push(`Add: ${ex.join(', ')}`);
+    lines.push(`City: ${val('city')}`, `Amount: ${q.custom ? 'Site visit' : naira(q.total)}`, `Name: ${name}`, `Phone: ${phone}`, `Address: ${addr}`, `Day: ${$('#b-day').value}, ${$('#b-time').value}`);
+    const msg = `Hello Hitex, job card No. ${$('#job-no').textContent}\n` + lines.join('\n');
+    $('#wa-send').href = 'https://wa.me/2348107609775?text=' + encodeURIComponent(msg);
+    $('#stamp-date').textContent = $('#b-day').value.toUpperCase();
+    const st = $('#stamp'); st.hidden = false; st.classList.remove('hit'); void st.offsetWidth; st.classList.add('hit');
+    $('#book').hidden = true; $('#wa-send').hidden = false;
+  });
+
+  $$('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    const done = () => { b.textContent = 'Copied'; b.classList.add('done'); setTimeout(() => { b.textContent = 'Copy'; b.classList.remove('done'); }, 1600); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(b.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText(b.dataset.copy).then(done, fallback); } catch { fallback(); }
+  }));
+
+  render();
+})();
+</script>
+</body>
+</html>
